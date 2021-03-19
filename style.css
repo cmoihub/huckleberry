@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -10,3 +10,76 @@ body {
 }
 
 /* Add styles here! */
+
+.max-width-wrapper {
+  padding: 0rem 12rem;
+  padding-block-start: 3rem;
+}
+
+section.max-width-wrapper {
+  background-color: hsl(0deg 0% 65%);
+  height: 100%;
+}
+div.max-width-wrapper,
+.card {
+  border-bottom: hsl(0deg 0% 35%) solid 5px;
+}
+
+.intro-chunk {
+  padding-block-end: 2rem;
+  padding-inline-start: 3rem;
+  margin-inline-start: 10rem;
+  width: 40%;
+  background-color: white;
+}
+
+strong {
+  color: hsl(122deg 39% 49%);
+}
+
+.card {
+  padding-block-start: 1px;
+  padding-inline: 1rem;
+  margin-inline-start: 10rem;
+  background-color: white;
+  width: 65%;
+}
+
+.indented-heading {
+  margin-inline-start: -2rem;
+  margin-block-start: 5px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: hsl(45deg 97% 49%);
+  border-bottom: hsl(45deg 100% 35%) solid 5px;
+  width: fit-content;
+}
+
+@media (max-width: 590px) {
+  .max-width-wrapper {
+    padding: 0;
+    padding-block-start: 3rem;
+  }
+  .intro-chunk {
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 1rem;
+    width: 50%;
+  }
+  .card {
+    padding: 0;
+    margin: 0;
+    padding-block-start: 1px;
+    padding-inline: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 200px) {
+  .max-width-wrapper {
+    padding-inline: 1rem;
+  }
+  .intro-chunk {
+    width: 100%;
+  }
+}
